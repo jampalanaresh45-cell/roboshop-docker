@@ -14,8 +14,8 @@ CREATE TABLE `cities` (
     `region` varchar(100) DEFAULT NULL,
     `latitude` decimal(10,7) DEFAULT NULL,
     `longitude` decimal(10,7) DEFAULT NULL,
-    PRIMARY KEY (`uuid`)
-    KEY `region_idx` (`region`)
-    KEY `c_code_idx` (`country_code`)
+    PRIMARY KEY (`uuid`),
+    KEY `region_idx` (`region`),
+    KEY `c_code_idx` (`country_code`),
     FULLTEXT KEY `city_idx` (`city`)
 )   ENGINE=InnoDB AUTO_INCREMENT=6223666 DEFAULT CHARSET=latin1;
