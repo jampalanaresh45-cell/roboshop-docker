@@ -1,12 +1,13 @@
 services:
   mongodb: # --name mongodb
     image: mongo:7.0
+    container_name: mongodb
 
 networks:
   default: 
     driver: bridge
     name: roboshop
-    external: false ## true if you have created network manually
+    external: true ## true if you have created network manually
 
 
       
