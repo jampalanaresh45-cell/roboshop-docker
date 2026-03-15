@@ -1,12 +1,12 @@
 services:
   mongodb: # --name mongodb
-    image: mongodb:v1
+    image: mongo:v1
 
 networks:
   default: 
     driver: bridge
     name: roboshop
     external: false ## true if you have created network manually
-    
+
 
       
