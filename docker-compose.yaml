@@ -1,6 +1,6 @@
 services:
   mongodb: # --name mongodb
-    image: mongo:7
+    image: mongo:7.0
 
 networks:
   default: 
